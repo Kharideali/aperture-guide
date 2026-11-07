@@ -9,6 +9,7 @@
 | قطر دهانه تلسکوپ | `index.html` | https://kharideali.github.io/aperture-guide/ |
 | فاصله کانونی تلسکوپ | `focal-length.html` | https://kharideali.github.io/aperture-guide/focal-length.html |
 | بزرگ‌نمایی تلسکوپ | `magnification.html` | https://kharideali.github.io/aperture-guide/magnification.html |
+| چشمی تلسکوپ | `eyepiece.html` | https://kharideali.github.io/aperture-guide/eyepiece.html |
 
 ## فایل‌های عکس
 
@@ -16,6 +17,9 @@
 |---|---|
 | `Aperture.webp` | `index.html` |
 | `Focallength_guide.webp` | `focal-length.html` |
+| `Eyepiece.webp` | `eyepiece.html` |
+
+صفحه‌ی بزرگ‌نمایی فعلاً عکس ندارد.
 
 ## افزودن یا ویرایش صفحه
 
@@ -30,6 +34,7 @@
 - اسم عکس‌ها به حروف بزرگ و کوچک حساس است. `Aperture.webp` با `aperture.webp` فرق دارد.
 - لینک دکمه‌های «خرید» در همه‌ی صفحه‌ها `https://kharideali.ir/` است. برای عوض‌کردنش، فایل را باز کن و با `Ctrl+F` همین آدرس را پیدا کن.
 - فایل جدید با اسم تکراری، فایل قبلی را جایگزین می‌کند.
+- فرمول‌ها با کلمه نوشته شده‌اند («۷۰۰ تقسیم بر ۲۵») تا در متن راست‌چین جای عددها جابه‌جا نشود.
 
 ## منابع محتوا
 
