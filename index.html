@@ -51,6 +51,40 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 .study-links .next-link.single-next{margin-inline-start:auto}
 .study-links .club-link{width:min(100%,300px);background:rgba(254,243,199,.88);color:#92400e;border-color:rgba(252,211,77,.85)}
 @media(max-width:520px){.study-footer{padding:16px}.study-row.article-row{gap:8px}.study-row.article-row a{flex:1;min-width:0;padding:9px 8px;font-size:.88rem}}
+
+/* قالب آموزشی هماهنگ با مقالات میکروسکوپ؛ پالت آبی تلسکوپ حفظ شده است */
+.hero{margin:10px 0 26px;padding:30px 28px;border:1px solid #bfdbfe;border-radius:24px;background:linear-gradient(135deg,#eff6ff 0%,#dbeafe 55%,#e0f2fe 100%);box-shadow:0 12px 28px rgba(30,86,184,.10)}
+.hero .tag,.pill{display:inline-block;padding:5px 12px;border-radius:999px;background:#dbeafe;color:#1e40af;font-size:.82rem;font-weight:800}
+.hero h1{margin:12px 0 8px;color:#163b78}
+.hero p{max-width:760px;margin:0;color:#334e78}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.hero-actions a{display:inline-flex;align-items:center;justify-content:center;padding:8px 16px;border-radius:999px;text-decoration:none;font-weight:800}
+.hero-actions .primary{background:#1e56b8;color:#fff}
+.hero-actions .secondary{background:#fff;color:#1e56b8;border:1px solid #bfdbfe}
+.content-section{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 24px 24px;margin:22px 0;box-shadow:0 8px 24px rgba(30,64,100,.045)}
+.content-section> .section-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.section-head .pill{background:#eaf0fb;color:#1e56b8}
+.simple-example,.info-box,.warning-box,.buying-box,.formula-box{padding:14px 18px;margin:16px 0;border-radius:16px;border:1px solid}
+.simple-example{background:#eff6ff;border-color:#bfdbfe;color:#1e3a8a}
+.info-box{background:#f0fdfa;border-color:#99f6e4;color:#115e59}
+.warning-box{background:#fff7ed;border-color:#fed7aa;color:#9a3412}
+.buying-box{background:#f5f3ff;border-color:#ddd6fe;color:#5b21b6}
+.formula-box{background:#172554;color:#eff6ff;border-color:#1e40af;text-align:center;font-weight:800}
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:14px 0}
+.grid-cards .mini-card{background:var(--hi);border:1px solid var(--line);border-radius:15px;padding:13px 16px}
+.grid-cards .mini-card b{display:block;color:var(--acc);margin-bottom:4px}
+.content-section h2{margin-top:.5rem}
+.content-section h3{margin-top:1.5rem}
+.faq-list details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:10px 0}
+.faq-list summary{cursor:pointer;font-weight:800;color:var(--acc)}
+.faq-list details p{margin:.5rem 0 0}
+.sources{margin:22px 0;padding:16px 20px;border:1px solid var(--line);border-radius:18px;background:var(--hi)}
+.sources h2{margin:0 0 8px;font-size:1.1rem}
+.sources ul{margin:0}
+.cta{text-align:center;margin:28px 0 8px}
+@media(max-width:600px){.hero{padding:22px 18px;border-radius:18px}.content-section{padding:14px 16px}.hero-actions a{flex:1}.grid-cards{grid-template-columns:1fr}}
+@media(prefers-color-scheme:dark){.hero{background:linear-gradient(135deg,#172554,#1e3a8a,#164e63);border-color:#334e83}.hero h1,.hero p{color:#eff6ff}.hero .tag,.pill{background:#1e3a8a;color:#dbeafe}.hero-actions .secondary{background:#172554;color:#bfdbfe;border-color:#334e83}.simple-example{background:#172554;border-color:#334e83;color:#dbeafe}.info-box{background:#123b3b;border-color:#155e5b;color:#ccfbf1}.warning-box{background:#431407;border-color:#9a3412;color:#ffedd5}.buying-box{background:#312e81;border-color:#5b21b6;color:#ede9fe}.grid-cards .mini-card{background:#1b2644}.sources{background:#1b2644}}
+
 </style>
 </head>
 <body>
@@ -65,22 +99,28 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
     <a href="https://kharideali.github.io/danesh-club/guides/telescope/">دنیای تلسکوپ</a>
   </div>
 </div>
-<header>
-<h1>قطر دهانه تلسکوپ</h1>
+<header class="hero">
+<span class="tag">بخش اول از مجموعه راهنمای تلسکوپ</span>
+<h1>قطر دهانه تلسکوپ چیست؟</h1>
+<p>مهم‌ترین عدد برای شناخت توان نوری تلسکوپ را بشناسید؛ از مفهوم ساده‌ی دهانه تا مقایسه‌ی اندازه‌ها، توان تفکیک و انتخاب آگاهانه.</p>
+<div class="hero-actions">
+<a class="primary" href="#simple">شروع با توضیح ساده</a>
+<a class="secondary" href="#guide">رفتن به راهنمای کامل</a>
+</div>
 </header>
 
-<article id="simple">
+<section class="content-section" id="simple">
+<div class="section-head"><span class="pill">به زبان خیلی ساده</span></div>
 <h2>قطر دهانه به زبان خیلی ساده</h2>
 <p>تلسکوپ هر چیزی که به ما نشان می‌دهد، با نوری می‌بیند که از آسمان به آن می‌رسد. قطر دهانه یعنی «پنجره‌ی ورود نور» تلسکوپ چقدر بزرگ است. این همان قطر لنز یا آینه‌ی اصلی است، یعنی سمتی که رو به آسمان است.</p>
 <p>فرض کن زیر باران چند سطل گذاشته‌ای. سطل بزرگ‌تر قطره‌های بیشتری جمع می‌کند. دهانه‌ی تلسکوپ هم مثل سطل، نور را جمع می‌کند. هرچه بزرگ‌تر باشد، نور بیشتری وارد می‌شود و تصویر روشن‌تر و پرجزئیات‌تر می‌شود. این فقط یک تشبیه است. در عمل، تلسکوپ نور را روی یک نقطه جمع می‌کند و کار دیگری هم با آن می‌کند.</p>
-<p>یک مثال عددی ساده: دو تلسکوپ را در نظر بگیر، یکی با دهانه‌ی ۵۰ میلی‌متر و یکی ۱۰۰ میلی‌متر. دومی فقط دو برابر قطر دارد، ولی حدود چهار برابر نور جمع می‌کند. چون مهم مساحت دایره است، نه قطر آن.</p>
-<p><b>نکته‌ی مهم:</b> قطر دهانه با بزرگ‌نمایی فرق دارد. دهانه تعیین می‌کند تصویر چقدر نور و جزئیات دارد. بزرگ‌نمایی فقط تصویر را بزرگ‌تر نشان می‌دهد.</p>
-<p><b>هنگام خرید:</b> قبل از هر عدد دیگری به قطر دهانه نگاه کن. این عدد معمولاً با میلی‌متر نوشته می‌شود (مثل ۷۰ یا ۱۳۰ میلی‌متر) و مهم‌ترین مشخصه‌ی تلسکوپ است.</p>
+<div class="simple-example"><b>یک مثال ملموس</b><p>دو تلسکوپ را در نظر بگیر: یکی با دهانه‌ی ۵۰ میلی‌متر و دیگری ۱۰۰ میلی‌متر. دومی فقط دو برابر قطر دارد، ولی حدود چهار برابر نور جمع می‌کند؛ چون مقدار نور به مساحت دهانه بستگی دارد.</p></div>
+<div class="info-box"><b>💡 نکته‌ی مهم</b><p>قطر دهانه با بزرگ‌نمایی فرق دارد. دهانه تعیین می‌کند تصویر چقدر نور و جزئیات دارد؛ بزرگ‌نمایی فقط تصویر را بزرگ‌تر نشان می‌دهد.</p></div>
+<div class="buying-box"><b>🛒 هنگام خرید</b><p>قبل از هر عدد دیگری به قطر دهانه نگاه کن. این عدد معمولاً با میلی‌متر نوشته می‌شود (مثل ۷۰ یا ۱۳۰ میلی‌متر).</p></div>
+</section>
 
-<a class="btn" href="https://kharideali.ir/">مشاهده‌ی تلسکوپ‌ها در فروشگاه</a>
-</article>
-
-<article id="guide">
+<section class="content-section" id="guide">
+<div class="section-head"><span class="pill">مقاله مفصل آموزشی</span></div>
 <h2>قطر دهانه تلسکوپ چیست؟ راهنمای انتخاب تلسکوپ بر اساس Aperture</h2>
 <p>وقتی برای خرید تلسکوپ جست‌وجو می‌کنید، اعدادی مثل «۷۰/۷۰۰» یا «بزرگ‌نمایی ۳۵۰ برابر» می‌بینید. اولین سؤال معمولاً این است: کدام عدد واقعاً مهم است؟ پاسخ ساده است: قطر دهانه مهم‌ترین مشخصه‌ی هر تلسکوپ است. در این مقاله یاد می‌گیرید این عدد چیست، چه کاری می‌کند و چطور با آن تصمیم بخرید.</p>
 
@@ -94,8 +134,10 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <p>دهانه با میلی‌متر یا اینچ بیان می‌شود (هر اینچ ۲۵٫۴ میلی‌متر است). در بسیاری از تلسکوپ‌های مبتدی، دو عدد پشت سر هم نوشته می‌شود. مثلاً ۷۰/۷۰۰ یعنی دهانه ۷۰ میلی‌متر و فاصله‌ی کانونی ۷۰۰ میلی‌متر. این الگو در بیشتر مدل‌ها رایج است، ولی برای اطمینان به مشخصات سازنده هم نگاه کنید.</p>
 
 <h3>تأثیر بر عملکرد</h3>
-<p><b>۱. توان گردآوری نور:</b> مقدار نور با مساحت دهانه متناسب است، نه قطر آن. برای مقایسه با چشم غیرمسلح، فرمول ساده‌ی (قطر دهانه ÷ ۷)² کاربرد دارد، چون مردمک چشم در تاریکی حدود ۷ میلی‌متر باز می‌شود. مثلاً برای دهانه‌ی ۲۰۰ میلی‌متر حدود ۸۱۶ برابر چشم به دست می‌آید. این عدد برای چشم جوان در شرایط ایده‌آل است و در عمل کمتر می‌شود.</p>
-<p><b>۲. توان تفکیک:</b> توانایی دیدن جزئیات ریز هم به قطر دهانه و هم به کیفیت اپتیک بستگی دارد. یک معیار قدیمی و مشهور، حد داوز است. فرمول آن برای دهانه به میلی‌متر برابر ۱۱۶ تقسیم بر قطر است و نتیجه بر حسب ثانیه‌ی قوس می‌آید. این حد برای جداکردن ستاره‌های دوتایی هم‌روشنایی در حدود قدر ۶ تعریف شده است. هرچه عدد کوچک‌تر، تفکیک بهتر.</p>
+<div class="grid-cards">
+<div class="mini-card"><b>🔭 توان گردآوری نور</b><p>مقدار نور با مساحت دهانه متناسب است، نه قطر آن. برای مقایسه با چشم غیرمسلح، فرمول ساده‌ی (قطر دهانه ÷ ۷)² کاربرد دارد؛ مثلاً برای دهانه‌ی ۲۰۰ میلی‌متر حدود ۸۱۶ برابر چشم.</p></div>
+<div class="mini-card"><b>✨ توان تفکیک</b><p>توانایی دیدن جزئیات ریز به قطر دهانه و کیفیت اپتیک بستگی دارد. معیار مشهور حد داوز، برای دهانه به میلی‌متر برابر ۱۱۶ تقسیم بر قطر است و نتیجه بر حسب ثانیه‌ی قوس می‌آید.</p></div>
+</div>
 <p><b>۳. جمع‌بندی اثر:</b> دهانه‌ی بزرگ‌تر یعنی نور بیشتر و تفکیک بهتر، به‌خصوص برای اجرام کم‌نور. اجرامی مثل کهکشان‌ها و سحابی‌ها کم‌نور و بزرگ‌اند و به دهانه‌ی بزرگ، بزرگ‌نمایی کم و آسمان تاریک نیاز دارند.</p>
 
 <h3>مقایسه‌ی چند دهانه (مقدار نظری و ایده‌آل)</h3>
@@ -109,21 +151,23 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <tr><td>۱۵۰ میلی‌متر</td><td>۴۵۹ برابر</td><td>۰٫۷۷</td><td>رصد جدی‌تر آماتوری</td></tr>
 <tr><td>۲۰۰ میلی‌متر</td><td>۸۱۶ برابر</td><td>۰٫۵۸</td><td>رصد پیشرفته آماتوری</td></tr>
 </table></div>
-<p class="mut">یادآوری: تلسکوپ ۱۵۰ میلی‌متری حدود ۴٫۶ برابر نور تلسکوپ ۷۰ میلی‌متری جمع می‌کند، یعنی نسبت مساحت‌ها. اما در شرایط واقعی آسمان، توان تفکیک مؤثر یک تلسکوپ می‌تواند خیلی کمتر از مقدار نظری باشد. آشفتگی جو اغلب سقف واقعی را مشخص می‌کند.</p>
+<div class="info-box"><b>یادآوری علمی</b><p>تلسکوپ ۱۵۰ میلی‌متری حدود ۴٫۶ برابر نور تلسکوپ ۷۰ میلی‌متری جمع می‌کند، یعنی نسبت مساحت‌ها. اما در شرایط واقعی آسمان، توان تفکیک مؤثر می‌تواند خیلی کمتر از مقدار نظری باشد؛ آشفتگی جو اغلب سقف واقعی را مشخص می‌کند.</p></div>
 
 <h3>بزرگ‌نمایی و دهانه</h3>
+<div class="formula-box">بزرگ‌نمایی مفید تقریبی ≈ ۲ برابر قطر دهانه بر حسب میلی‌متر</div>
 <p>دهانه، بزرگ‌نمایی را مستقیم تعیین نمی‌کند. بزرگ‌نمایی فقط به فاصله‌ی کانونی تلسکوپ و چشمی بستگی دارد و اندازه‌ی لنز یا آینه‌ی اصلی در آن نقشی ندارد. ولی دهانه سقف بزرگ‌نمایی مفید را مشخص می‌کند. منابع در این‌باره عددهای متفاوتی می‌دهند: دو برابر قطر دهانه به میلی‌متر، سی برابر قطر به اینچ و سی‌وپنج برابر قطر به اینچ. برای دهانه‌ی ۷۰ میلی‌متر، این‌ها تقریباً بازه‌ی ۸۰ تا ۱۴۰ برابر می‌دهند. برای دهانه‌ی ۱۵۰ میلی‌متر حدود ۱۸۰ تا ۳۰۰ برابر. در تلسکوپ‌های ارزان، حد پایین‌تر عاقلانه‌تر است.</p>
 
 <h3>مزایا و محدودیت‌ها</h3>
-<p><b>مزایا:</b> نور بیشتر، جزئیات بیشتر، امکان دیدن اجرام کم‌نورتر.</p>
+<div class="grid-cards"><div class="mini-card"><b>مزایا</b><p>نور بیشتر، جزئیات بیشتر و امکان دیدن اجرام کم‌نورتر.</p></div>
 <p><b>محدودیت‌ها:</b></p>
 <ul>
 <li>دهانه‌ی بزرگ‌تر معمولاً سنگین‌تر و گران‌تر است و به پایه‌ی محکم‌تری نیاز دارد.</li>
 <li>کیفیت اپتیک می‌تواند اثر دهانه را خنثی کند. دهانه‌ی بزرگ با اپتیک ضعیف همیشه بهتر از دهانه‌ی کوچک با اپتیک خوب نیست.</li>
 <li>آلودگی نوری و آشفتگی جو، اثر دهانه را محدود می‌کنند.</li>
 <li>در تلسکوپ‌های بازتابی و ترکیبی، آینه‌ی ثانویه بخش کوچکی از نور را مسدود می‌کند، پس مقایسه‌ی دقیق به نوع تلسکوپ هم بستگی دارد.</li>
-</ul>
+</ul></div>
 
+<div class="warning-box"><b>⚠️ محدودیت مهم</b><p>دهانه‌ی بزرگ‌تر معمولاً سنگین‌تر و گران‌تر است؛ کیفیت اپتیک، آلودگی نوری و آشفتگی جو هم بر نتیجه اثر می‌گذارند.</p></div>
 <h3>اشتباهات رایج خریداران</h3>
 <ul>
 <li>تصور اینکه «بزرگ‌نمایی ۵۰۰ برابر» یعنی تلسکوپ قوی. منابع نجومی هشدار می‌دهند که عددهای درشت بزرگ‌نمایی روی جعبه و تبلیغات گمراه‌کننده است.</li>
@@ -155,28 +199,22 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <li>به عددهای تبلیغاتی مثل بزرگ‌نمایی توجه نکنید.</li>
 </ol>
 
-<h3>جمع‌بندی</h3>
-<p>قطر دهانه نخستین عددی است که باید به آن نگاه کنید، ولی تنها عدد نیست. کیفیت اپتیک، پایه، آسمان و مهارت کاربر هم در نتیجه‌ی نهایی اثر دارند. دهانه‌ی بزرگ‌تر در شرایط یکسان، نور و جزئیات بیشتری می‌دهد.</p>
-<img src="Aperture.webp" alt="قطر دهانه تلسکوپ" style="max-width:100%;height:auto;border-radius:8px">
-<a class="btn" href="https://kharideali.ir/" rel="sponsored noopener">خرید تلسکوپ از فروشگاه</a>
-</article>
+<div class="simple-example"><b>جمع‌بندی</b><p>قطر دهانه نخستین عددی است که باید به آن نگاه کنید، ولی تنها عدد نیست. کیفیت اپتیک، پایه، آسمان و مهارت کاربر هم در نتیجه‌ی نهایی اثر دارند. دهانه‌ی بزرگ‌تر در شرایط یکسان، نور و جزئیات بیشتری می‌دهد.</p></div>
+<img src="Aperture.webp" alt="قطر دهانه تلسکوپ" style="max-width:100%;height:auto;border-radius:16px;display:block;margin:18px auto">
+</section>
 
-<article id="faq">
-<h2>پرسش‌های متداول</h2>
-<h3>آیا دهانه‌ی بزرگ‌تر همیشه بهتر است؟</h3>
-<p>در شرایط یکسان بله، ولی وزن، قیمت و اپتیک هم اهمیت دارند.</p>
-<h3>دهانه‌ی ۷۰ میلی‌متر برای ماه کافی است؟</h3>
-<p>برای دیدن ماه بله. جزئیات سطح مثل دهانه‌ها دیده می‌شود، هرچند ظرافت تصویر محدود است.</p>
-<h3>آیا با دهانه‌ی بزرگ‌تر می‌شود بزرگ‌نمایی را بی‌نهایت بالا برد؟</h3>
-<p>خیر. بزرگ‌نمایی مفید سقف دارد و بعد از آن تصویر فقط بزرگ‌تر و تارتر می‌شود.</p>
-<h3>۷۰/۷۰۰ یعنی چه؟</h3>
-<p>در بسیاری از مدل‌ها یعنی دهانه‌ی ۷۰ و فاصله‌ی کانونی ۷۰۰ میلی‌متر.</p>
-<h3>فرق دهانه با فاصله‌ی کانونی چیست؟</h3>
-<p>دهانه مقدار نور و جزئیات را مشخص می‌کند. فاصله‌ی کانونی طول مسیر نور است و با چشمی، بزرگ‌نمایی را می‌سازد.</p>
-</article>
+<section class="content-section faq-list" id="faq">
+<div class="section-head"><span class="pill">پرسش‌های متداول</span></div>
+<h2>سؤالات پرتکرار درباره قطر دهانه</h2>
+<details><summary>آیا دهانه‌ی بزرگ‌تر همیشه بهتر است؟</summary><p>در شرایط یکسان بله، ولی وزن، قیمت و اپتیک هم اهمیت دارند.</p></details>
+<details><summary>دهانه‌ی ۷۰ میلی‌متر برای ماه کافی است؟</summary><p>برای دیدن ماه بله. جزئیات سطح مثل دهانه‌ها دیده می‌شود، هرچند ظرافت تصویر محدود است.</p></details>
+<details><summary>آیا با دهانه‌ی بزرگ‌تر می‌شود بزرگ‌نمایی را بی‌نهایت بالا برد؟</summary><p>خیر. بزرگ‌نمایی مفید سقف دارد و بعد از آن تصویر فقط بزرگ‌تر و تارتر می‌شود.</p></details>
+<details><summary>۷۰/۷۰۰ یعنی چه؟</summary><p>در بسیاری از مدل‌ها یعنی دهانه‌ی ۷۰ و فاصله‌ی کانونی ۷۰۰ میلی‌متر.</p></details>
+<details><summary>فرق دهانه با فاصله‌ی کانونی چیست؟</summary><p>دهانه مقدار نور و جزئیات را مشخص می‌کند. فاصله‌ی کانونی طول مسیر نور است و با چشمی، بزرگ‌نمایی را می‌سازد.</p></details>
+</section>
 
-<section>
-<h3>منابع</h3>
+<section class="sources">
+<h2>منابع علمی و مطالعه بیشتر</h2>
 <ul class="src">
 <li><a href="https://skyandtelescope.com/astronomy-equipment/how-to-choose-a-telescope/">Sky &amp; Telescope</a></li>
 <li><a href="https://rasc.ca/node/47169">RASC</a></li>
@@ -187,6 +225,7 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 </ul>
 </section>
 
+<p class="cta"><a class="btn" href="https://kharideali.ir/" target="_blank" rel="noopener">مشاهده‌ی تلسکوپ‌ها در فروشگاه</a></p>
 <section class="study-footer" aria-label="ادامه مسیر یادگیری">
 <h2>ادامه مسیر یادگیری</h2>
 <div class="study-links">
