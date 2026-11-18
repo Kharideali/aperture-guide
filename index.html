@@ -36,6 +36,14 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 .breadcrumbs{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px;font-size:.88rem;color:var(--mut)}
 .breadcrumbs a{color:var(--acc);text-decoration:none}
 .breadcrumbs a:hover{text-decoration:underline}
+
+.study-footer{margin:34px 0 8px;padding:20px;background:var(--hi);border:1px solid var(--line);border-radius:12px}
+.study-footer h2{margin:0 0 14px;font-size:1.15rem}
+.study-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.study-links a{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);text-decoration:none;font-weight:700}
+.study-links a:hover{border-color:var(--acc)}
+.study-links .world-link{background:var(--acc);color:#fff;border-color:var(--acc)}
+@media(max-width:520px){.study-links{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -52,8 +60,6 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 </div>
 <header>
 <h1>قطر دهانه تلسکوپ</h1>
-<p><a href="eyepiece.html">مقاله‌ی چشمی تلسکوپ ←</a></p>
-<p><a href="magnification.html">مقاله‌ی بزرگ‌نمایی تلسکوپ ←</a></p>
 </header>
 
 <nav>
@@ -178,6 +184,16 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <li><a href="https://lensc.org/2021/02">Lensc</a></li>
 <li><a href="https://oasi.org.uk/Telescopes/Dawes_limit/Dawes_limit.php">Orwell Astronomical Society (Dawes limit)</a></li>
 </ul>
+</section>
+
+<section class="study-footer" aria-label="ادامه مسیر یادگیری">
+<h2>ادامه مسیر یادگیری</h2>
+<div class="study-links">
+<a class="world-link" href="https://kharideali.github.io/danesh-club/guides/telescope/">بازگشت به دنیای تلسکوپ</a>
+
+<a href="focal-length.html">مقاله بعدی: فاصله‌ی کانونی تلسکوپ →</a>
+<a href="https://kharideali.github.io/danesh-club/">بازگشت به باشگاه دانش</a>
+</div>
 </section>
 </div>
 </body>
