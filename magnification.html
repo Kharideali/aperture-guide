@@ -22,7 +22,18 @@ nav{background:var(--hi);border-right:4px solid var(--acc);padding:10px 18px;mar
 nav a{display:block;color:var(--acc);text-decoration:none;font-weight:700}
 article{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 24px 24px;margin:26px 0}
 a{color:var(--acc)}
-.tw{overflow-x:auto}
+.tw{overflow-x:auto;border:1px solid #bfdbfe;border-radius:18px;background:var(--card);margin:14px 0;padding:8px;box-shadow:0 6px 18px rgba(30,86,184,.07)}
+.tw table{border-collapse:separate;border-spacing:0;width:100%;font-size:.92rem;line-height:1.8;overflow:hidden;border-radius:12px}
+.tw th{background:#dbeafe;color:#1e3a8a;font-weight:800;white-space:nowrap}
+.tw td,.tw th{border:1px solid var(--line);padding:9px 12px;text-align:right}
+.tw tr:nth-child(even) td{background:var(--hi)}
+.tw tr:first-child th:first-child{border-top-right-radius:10px}
+.tw tr:first-child th:last-child{border-top-left-radius:10px}
+.advantage-card{background:#ecfdf5!important;border-color:#a7f3d0!important;color:#065f46}
+.limitation-card{background:#fff1f2!important;border-color:#fecdd3!important;color:#9f1239}
+.advantage-card b{color:#047857!important}
+.limitation-card b{color:#be123c!important}
+@media(prefers-color-scheme:dark){.tw{border-color:#334e83}.tw th{background:#1e3a8a;color:#dbeafe}.advantage-card{background:#123b2d!important;border-color:#166534!important;color:#d1fae5}.limitation-card{background:#4c1d2b!important;border-color:#9f1239!important;color:#ffe4e6}.advantage-card b{color:#a7f3d0!important}.limitation-card b{color:#fecdd3!important}}
 table{border-collapse:collapse;width:100%;font-size:.92rem;line-height:1.7}
 th,td{border:1px solid var(--line);padding:6px 10px;text-align:right}
 th{background:var(--hi)}
@@ -116,7 +127,7 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <p>بزرگ‌نمایی یعنی تصویر چند برابر بزرگ‌تر دیده شود. اگر بزرگ‌نمایی ۵۰ برابر باشد، جرم آسمانی را طوری می‌بینی که انگار ۵۰ برابر نزدیک‌تر است.</p>
 <p>یک تشبیه: وقتی روی گوشی زیاد زوم می‌کنی، تصویر بزرگ می‌شود ولی جزئیات تازه‌ای پیدا نمی‌کند. بزرگ‌نمایی تلسکوپ هم همین‌طور است: اندازه را بزرگ می‌کند، اما خودش شفافیت را بیشتر نمی‌کند. (این فقط یک تشبیه است و دو سازوکار یکی نیستند.)</p>
 <p>بزرگ‌نمایی از یک تقسیم ساده به دست می‌آید:</p>
-<p class="fm">فاصله‌ی کانونی تلسکوپ تقسیم بر فاصله‌ی کانونی چشمی</p>
+<div class="formula-box">بزرگ‌نمایی = فاصله‌ی کانونی تلسکوپ ÷ فاصله‌ی کانونی چشمی</div>
 <p>مثال: تلسکوپی با فاصله‌ی کانونی ۷۰۰ میلی‌متر داری.</p>
 <ul>
 <li>با چشمی ۲۵ میلی‌متری: ۷۰۰ تقسیم بر ۲۵ می‌شود ۲۸ برابر</li>
@@ -147,12 +158,16 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <h3>سقف بزرگ‌نمایی مفید</h3>
 <p>بزرگ‌نمایی را می‌شود بی‌نهایت بالا برد، ولی بعد از یک حد تصویر فقط بزرگ‌تر و تارتر می‌شود. این حد را دهانه تعیین می‌کند. منابع عددهای متفاوتی می‌دهند: دو برابر قطر دهانه به میلی‌متر، سی برابر قطر به اینچ و سی‌وپنج برابر قطر به اینچ. برای دهانه‌ی ۷۰ میلی‌متر، این‌ها تقریباً بازه‌ی ۸۰ تا ۱۴۰ برابر می‌دهند. پس ۱۷۵ برابر با چشمی ۴ میلی‌متری از این بازه بیرون است.</p>
 
-<h3>تأثیر عملی و محدودیت‌ها</h3><div class="mini-card limitation-card"><h4>محدودیت‌هایی که باید بدانید</h4><ul>
+<h3>تأثیر عملی و محدودیت‌ها</h3>
+<div class="grid-cards">
+<div class="mini-card advantage-card"><b>✓ کاربرد بزرگ‌نمایی مناسب</b><p>بزرگ‌نمایی مناسب کمک می‌کند جزئیات ماه و سیارات را بهتر بررسی کنید؛ بهتر است رصد را با بزرگ‌نمایی کم شروع کنید و در صورت پایدار بودن تصویر، آن را افزایش دهید.</p></div>
+<div class="mini-card limitation-card"><b>⚠ محدودیت‌هایی که باید بدانید</b><ul>
 <li>در بزرگ‌نمایی بالا، تصویر تاریک‌تر می‌شود و میدان دید باریک‌تر.</li>
 <li>آشفتگی جو و لرزش پایه هم بزرگ‌تر دیده می‌شوند.</li>
 <li>برای اجرام کم‌نور مثل سحابی‌ها، بزرگ‌نمایی کم معمولاً بهتر است.</li>
 <li>بزرگ‌نمایی جای دهانه را نمی‌گیرد. وضوح و روشنایی را دهانه تعیین می‌کند.</li>
 </ul></div>
+</div>
 
 <h3>اشتباهات رایج خریداران</h3>
 <ul>
