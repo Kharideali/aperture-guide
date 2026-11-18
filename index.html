@@ -22,7 +22,18 @@ nav{background:var(--hi);border-right:4px solid var(--acc);padding:10px 18px;mar
 nav a{display:block;color:var(--acc);text-decoration:none;font-weight:700}
 article{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 24px 24px;margin:26px 0}
 a{color:var(--acc)}
-.tw{overflow-x:auto}
+.tw{overflow-x:auto;border:1px solid #bfdbfe;border-radius:18px;background:var(--card);margin:14px 0;padding:8px;box-shadow:0 6px 18px rgba(30,86,184,.07)}
+.tw table{border-collapse:separate;border-spacing:0;width:100%;font-size:.92rem;line-height:1.8;overflow:hidden;border-radius:12px}
+.tw th{background:#dbeafe;color:#1e3a8a;font-weight:800;white-space:nowrap}
+.tw td,.tw th{border:1px solid var(--line);padding:9px 12px;text-align:right}
+.tw tr:nth-child(even) td{background:var(--hi)}
+.tw tr:first-child th:first-child{border-top-right-radius:10px}
+.tw tr:first-child th:last-child{border-top-left-radius:10px}
+.advantage-card{background:#ecfdf5!important;border-color:#a7f3d0!important;color:#065f46}
+.limitation-card{background:#fff1f2!important;border-color:#fecdd3!important;color:#9f1239}
+.advantage-card b{color:#047857!important}
+.limitation-card b{color:#be123c!important}
+@media(prefers-color-scheme:dark){.tw{border-color:#334e83}.tw th{background:#1e3a8a;color:#dbeafe}.advantage-card{background:#123b2d!important;border-color:#166534!important;color:#d1fae5}.limitation-card{background:#4c1d2b!important;border-color:#9f1239!important;color:#ffe4e6}.advantage-card b{color:#a7f3d0!important}.limitation-card b{color:#fecdd3!important}}
 table{border-collapse:collapse;width:100%;font-size:.92rem;line-height:1.7}
 th,td{border:1px solid var(--line);padding:6px 10px;text-align:right}
 th{background:var(--hi)}
@@ -141,7 +152,7 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <p><b>۳. جمع‌بندی اثر:</b> دهانه‌ی بزرگ‌تر یعنی نور بیشتر و تفکیک بهتر، به‌خصوص برای اجرام کم‌نور. اجرامی مثل کهکشان‌ها و سحابی‌ها کم‌نور و بزرگ‌اند و به دهانه‌ی بزرگ، بزرگ‌نمایی کم و آسمان تاریک نیاز دارند.</p>
 
 <h3>مقایسه‌ی چند دهانه (مقدار نظری و ایده‌آل)</h3>
-<div class="tw"><table>
+<div class="tw table-card"><table>
 <tr><th>قطر دهانه</th><th>نور نسبت به چشم (تقریبی)</th><th>حد داوز (ثانیه‌ی قوس)</th><th>مناسب برای</th></tr>
 <tr><td>۵۰ میلی‌متر</td><td>۵۱ برابر</td><td>۲٫۳۲</td><td>ماه، دید ابتدایی، مناسب فقط برای شروع بسیار ساده</td></tr>
 <tr><td>۷۰ میلی‌متر</td><td>۱۰۰ برابر</td><td>۱٫۶۶</td><td>ماه، سیارات درشت، خوشه‌های روشن</td></tr>
@@ -158,16 +169,21 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <p>دهانه، بزرگ‌نمایی را مستقیم تعیین نمی‌کند. بزرگ‌نمایی فقط به فاصله‌ی کانونی تلسکوپ و چشمی بستگی دارد و اندازه‌ی لنز یا آینه‌ی اصلی در آن نقشی ندارد. ولی دهانه سقف بزرگ‌نمایی مفید را مشخص می‌کند. منابع در این‌باره عددهای متفاوتی می‌دهند: دو برابر قطر دهانه به میلی‌متر، سی برابر قطر به اینچ و سی‌وپنج برابر قطر به اینچ. برای دهانه‌ی ۷۰ میلی‌متر، این‌ها تقریباً بازه‌ی ۸۰ تا ۱۴۰ برابر می‌دهند. برای دهانه‌ی ۱۵۰ میلی‌متر حدود ۱۸۰ تا ۳۰۰ برابر. در تلسکوپ‌های ارزان، حد پایین‌تر عاقلانه‌تر است.</p>
 
 <h3>مزایا و محدودیت‌ها</h3>
-<div class="grid-cards"><div class="mini-card"><b>مزایا</b><p>نور بیشتر، جزئیات بیشتر و امکان دیدن اجرام کم‌نورتر.</p></div>
-<p><b>محدودیت‌ها:</b></p>
-<ul>
-<li>دهانه‌ی بزرگ‌تر معمولاً سنگین‌تر و گران‌تر است و به پایه‌ی محکم‌تری نیاز دارد.</li>
-<li>کیفیت اپتیک می‌تواند اثر دهانه را خنثی کند. دهانه‌ی بزرگ با اپتیک ضعیف همیشه بهتر از دهانه‌ی کوچک با اپتیک خوب نیست.</li>
-<li>آلودگی نوری و آشفتگی جو، اثر دهانه را محدود می‌کنند.</li>
-<li>در تلسکوپ‌های بازتابی و ترکیبی، آینه‌ی ثانویه بخش کوچکی از نور را مسدود می‌کند، پس مقایسه‌ی دقیق به نوع تلسکوپ هم بستگی دارد.</li>
-</ul></div>
-
-<div class="warning-box"><b>⚠️ محدودیت مهم</b><p>دهانه‌ی بزرگ‌تر معمولاً سنگین‌تر و گران‌تر است؛ کیفیت اپتیک، آلودگی نوری و آشفتگی جو هم بر نتیجه اثر می‌گذارند.</p></div>
+<div class="grid-cards">
+  <div class="mini-card advantage-card">
+    <b>✓ مزایا</b>
+    <p>نور بیشتر، جزئیات بیشتر و امکان دیدن اجرام کم‌نورتر.</p>
+  </div>
+  <div class="mini-card limitation-card">
+    <b>⚠ محدودیت‌ها</b>
+    <ul>
+      <li>دهانه‌ی بزرگ‌تر معمولاً سنگین‌تر و گران‌تر است و به پایه‌ی محکم‌تری نیاز دارد.</li>
+      <li>کیفیت اپتیک می‌تواند اثر دهانه را خنثی کند؛ دهانه‌ی بزرگ با اپتیک ضعیف همیشه بهتر نیست.</li>
+      <li>آلودگی نوری و آشفتگی جو، اثر دهانه را محدود می‌کنند.</li>
+      <li>در تلسکوپ‌های بازتابی و ترکیبی، آینه‌ی ثانویه بخشی از نور را مسدود می‌کند.</li>
+    </ul>
+  </div>
+</div>
 <h3>اشتباهات رایج خریداران</h3>
 <ul>
 <li>تصور اینکه «بزرگ‌نمایی ۵۰۰ برابر» یعنی تلسکوپ قوی. منابع نجومی هشدار می‌دهند که عددهای درشت بزرگ‌نمایی روی جعبه و تبلیغات گمراه‌کننده است.</li>
