@@ -38,13 +38,19 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 .breadcrumbs a{color:var(--acc);text-decoration:none}
 .breadcrumbs a:hover{text-decoration:underline}
 
-.study-footer{margin:34px 0 8px;padding:20px;background:var(--hi);border:1px solid var(--line);border-radius:12px}
-.study-footer h2{margin:0 0 14px;font-size:1.15rem}
-.study-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-.study-links a{display:block;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--card);text-decoration:none;font-weight:700}
-.study-links a:hover{border-color:var(--acc)}
-.study-links .world-link{background:var(--acc);color:#fff;border-color:var(--acc)}
-@media(max-width:520px){.study-links{grid-template-columns:1fr}}
+.study-footer{margin:38px 0 12px;padding:22px;background:rgba(255,255,255,.58);border:1px solid rgba(255,255,255,.82);border-radius:20px;box-shadow:0 10px 30px rgba(48,75,120,.10);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.study-footer h2{margin:0 0 18px;font-size:1.15rem;text-align:center}
+.study-links{display:flex;flex-direction:column;gap:12px}
+.study-row{display:flex;align-items:center;gap:12px}
+.study-row.world-row,.study-row.club-row{justify-content:center}
+.study-row.article-row{justify-content:space-between;direction:rtl}
+.study-links a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;border:1px solid rgba(255,255,255,.9);border-radius:14px;text-decoration:none;font-weight:800;text-align:center;line-height:1.7;box-shadow:0 5px 14px rgba(40,60,100,.08);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:transform .2s ease,box-shadow .2s ease,filter .2s ease}
+.study-links a:hover{transform:translateY(-3px);box-shadow:0 9px 20px rgba(40,60,100,.14);filter:brightness(1.035)}
+.study-links .world-link{width:min(100%,360px);background:rgba(186,230,253,.78);color:#075985;border-color:rgba(125,211,252,.8)}
+.study-links .prev-link{background:rgba(209,250,229,.82);color:#065f46;border-color:rgba(110,231,183,.8)}
+.study-links .next-link{background:rgba(251,207,232,.82);color:#9d174d;border-color:rgba(244,114,182,.72)}
+.study-links .club-link{width:min(100%,300px);background:rgba(254,243,199,.88);color:#92400e;border-color:rgba(252,211,77,.85)}
+@media(max-width:520px){.study-footer{padding:16px}.study-row.article-row{gap:8px}.study-row.article-row a{flex:1;min-width:0;padding:9px 8px;font-size:.88rem}}
 </style>
 </head>
 <body>
@@ -159,10 +165,16 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <section class="study-footer" aria-label="ادامه مسیر یادگیری">
 <h2>ادامه مسیر یادگیری</h2>
 <div class="study-links">
-<a class="world-link" href="https://kharideali.github.io/danesh-club/guides/telescope/">بازگشت به دنیای تلسکوپ</a>
-<a href="focal-length.html">← مقاله قبلی: فاصله‌ی کانونی تلسکوپ</a>
-<a href="eyepiece.html">مقاله بعدی: چشمی تلسکوپ →</a>
-<a href="https://kharideali.github.io/danesh-club/">بازگشت به باشگاه دانش</a>
+  <div class="study-row world-row">
+    <a class="world-link" href="https://kharideali.github.io/danesh-club/guides/telescope/">بازگشت به دنیای تلسکوپ</a>
+  </div>
+  <div class="study-row article-row">
+    <a class="prev-link" href="focal-length.html">← مقاله قبلی: فاصله‌ی کانونی تلسکوپ</a>
+    <a class="next-link" href="eyepiece.html">مقاله بعدی: چشمی تلسکوپ ←</a>
+  </div>
+  <div class="study-row club-row">
+    <a class="club-link" href="https://kharideali.github.io/danesh-club/">بازگشت به باشگاه دانش</a>
+  </div>
 </div>
 </section>
 </div>
