@@ -51,6 +51,54 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 .study-links .next-link{background:rgba(251,207,232,.82);color:#9d174d;border-color:rgba(244,114,182,.72)}
 .study-links .club-link{width:min(100%,300px);background:rgba(254,243,199,.88);color:#92400e;border-color:rgba(252,211,77,.85)}
 @media(max-width:520px){.study-footer{padding:16px}.study-row.article-row{gap:8px}.study-row.article-row a{flex:1;min-width:0;padding:9px 8px;font-size:.88rem}}
+
+/* قالب یکپارچه‌ی آموزشی تلسکوپ؛ متن و محتوای علمی مقاله حفظ شده است */
+.w{max-width:1000px;padding:22px 18px 64px}
+.telescope-hero{position:relative;overflow:hidden;margin:18px 0 30px;padding:clamp(30px,6vw,64px);border-radius:28px;background:linear-gradient(125deg,#123d78 0%,#1e56b8 48%,#16a6a1 100%);color:#fff;box-shadow:0 18px 42px rgba(30,86,184,.2)}
+.telescope-hero:before,.telescope-hero:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.10);pointer-events:none}
+.telescope-hero:before{width:260px;height:260px;top:-130px;left:-50px}
+.telescope-hero:after{width:190px;height:190px;bottom:-110px;right:8%}
+.hero-inner{position:relative;z-index:1;max-width:760px;margin:auto}
+.hero-kicker{display:inline-block;padding:5px 14px;border:1px solid rgba(255,255,255,.35);border-radius:999px;background:rgba(255,255,255,.13);font-size:.82rem;font-weight:800}
+.telescope-hero h1{margin:15px 0 10px;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.5}
+.telescope-hero p{max-width:680px;color:#e4f2ff;font-size:1.05rem;line-height:2}
+.hero-button{display:inline-flex;margin-top:14px;padding:10px 20px;border-radius:999px;background:#fff;color:#174b91!important;text-decoration:none;font-weight:800;box-shadow:0 7px 18px rgba(0,0,0,.12)}
+.content-card{margin:26px auto;padding:clamp(20px,3vw,34px);border:1px solid var(--line);border-radius:22px;background:var(--card);box-shadow:0 10px 28px rgba(30,60,110,.07)}
+.content-card h2{margin-top:0;padding-bottom:10px;border-bottom:1px solid var(--line);font-size:1.45rem}
+.content-card h3{margin-top:1.8rem;color:var(--acc);font-size:1.12rem}
+.content-card p,.content-card li{line-height:2.05}
+.simple-card{border-top:5px solid #27a69b}
+.detailed-card{border-top:5px solid #3978d0}
+.table-card{margin:18px 0;padding:12px;overflow-x:auto;border:1px solid #c9d9f4;border-radius:18px;background:linear-gradient(145deg,#f5f9ff,#fff);box-shadow:0 8px 22px rgba(30,86,184,.08)}
+.table-card table{min-width:560px;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:12px}
+.table-card th{background:#dceaff;color:#174b91;font-weight:800}
+.table-card td,.table-card th{padding:10px 12px;border-color:#d9e4f3}
+.table-card tr:nth-child(even) td{background:#f6f9ff}
+.pros-cons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:14px 0}
+.mini-card{padding:18px;border-radius:18px;border:1px solid;min-width:0}
+.mini-card h4{margin:0 0 8px;font-size:1.03rem}
+.mini-card p{margin:.3rem 0}
+.mini-card ul{margin:.3rem 0}
+.advantage-card{background:linear-gradient(145deg,#ecfdf5,#f5fffb);border-color:#a7e8ca;color:#145b43}
+.limitation-card{background:linear-gradient(145deg,#fff1f2,#fff8f8);border-color:#fecdd3;color:#8f2944}
+.faq-card details{margin:12px 0;padding:14px 18px;border:1px solid var(--line);border-radius:14px;background:var(--hi)}
+.faq-card summary{cursor:pointer;font-weight:800;color:var(--acc)}
+.faq-card details p{margin:10px 0 0}
+.sources-card{margin:28px auto;padding:22px 26px;border:1px solid #c9d9f4;border-radius:20px;background:linear-gradient(145deg,#f3f8ff,#fff);box-shadow:0 8px 22px rgba(30,86,184,.06)}
+.sources-card h2{margin:0 0 12px;font-size:1.25rem}
+.sources-card .src{margin:0}
+.cta{text-align:center;margin:34px 0 8px}
+.cta .btn{margin:0;padding:12px 28px;border-radius:999px;background:linear-gradient(120deg,#1e56b8,#168f9a);box-shadow:0 8px 20px rgba(30,86,184,.2)}
+@media(prefers-color-scheme:dark){
+ .table-card,.sources-card{background:#17233b;border-color:#344b70}
+ .table-card th{background:#233c63;color:#dbeafe}
+ .table-card td,.table-card th{border-color:#344b70}
+ .table-card tr:nth-child(even) td{background:#1b2a45}
+ .advantage-card{background:#15372f;border-color:#28664f;color:#c8f7df}
+ .limitation-card{background:#3a202b;border-color:#754052;color:#ffd7e0}
+}
+@media(max-width:650px){.w{padding:12px 12px 44px}.telescope-hero{border-radius:21px;margin-top:10px}.pros-cons{grid-template-columns:1fr}.content-card{border-radius:18px;padding:19px 16px}.sources-card{padding:18px 16px}.table-card{padding:8px}}
+
 </style>
 </head>
 <body>
@@ -65,11 +113,9 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
     <a href="https://kharideali.github.io/danesh-club/guides/telescope/">دنیای تلسکوپ</a>
   </div>
 </div>
-<header>
-<h1>فاصله کانونی تلسکوپ</h1>
-</header>
+<header class="telescope-hero"><div class="hero-inner"><span class="hero-kicker">راهنمای علمی تلسکوپ</span><h1>فاصله کانونی تلسکوپ چیست؟</h1><p>بفهمید فاصله‌ی کانونی چگونه بر بزرگ‌نمایی و میدان دید اثر می‌گذارد و هنگام انتخاب تلسکوپ به چه نکاتی توجه کنید.</p><a class="hero-button" href="#guide">رفتن به راهنمای کامل</a></div></header>
 
-<article id="simple">
+<article id="simple" class="content-card simple-card">
 <h2>فاصله کانونی به زبان خیلی ساده</h2>
 <p>تلسکوپ نور را از آسمان می‌گیرد و جایی در داخل خودش جمع می‌کند تا تصویر بسازد. فاصله‌ی کانونی یعنی فاصله‌ی لنز یا آینه‌ی اصلی تا همان نقطه‌ای که تصویر ساخته می‌شود. اندازه‌ی آن با میلی‌متر بیان می‌شود.</p>
 <p>یک آزمایش ساده را تصور کن: ذره‌بینی را مقابل یک پنجره‌ی روشن بگیر و تصویر پنجره را روی یک کاغذ بیاور. هرجا تصویر واضح شد، فاصله‌ی ذره‌بین تا کاغذ همان «فاصله‌ی کانونی» ذره‌بین است. (این کار را فقط با پنجره انجام بده. هرگز ذره‌بین را مقابل خورشید نگیر.) هرچه این فاصله بیشتر باشد، تصویر روی کاغذ بزرگ‌تر می‌شود.</p>
@@ -82,10 +128,10 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <p>اگر فاصله‌ی کانونی تلسکوپ ۱۰۰۰ میلی‌متر بود، همان چشمی ۱۰ میلی‌متری ۱۰۰ برابر می‌داد.</p>
 <p>اما همه‌چیز خوب نیست. فاصله‌ی کانونی بلندتر یعنی تصویر بزرگ‌تر، ولی بخش کوچک‌تری از آسمان دیده می‌شود.</p>
 <p><b>هنگام خرید:</b> فاصله‌ی کانونی بیشتر یعنی تلسکوپ بهتر نیست. این عدد بیشتر نوع تصویر را مشخص می‌کند: بزرگ‌تر و باریک‌تر، یا کوچک‌تر و وسیع‌تر.</p>
-<a class="btn" href="https://kharideali.ir/" rel="sponsored noopener">مشاهده‌ی تلسکوپ‌ها در فروشگاه</a>
+
 </article>
 
-<article id="guide">
+<article id="guide" class="content-card detailed-card">
 <h2>فاصله کانونی تلسکوپ چیست؟ تأثیر آن بر بزرگ‌نمایی و میدان دید</h2>
 <p>در مشخصات تلسکوپ‌ها عددهایی مثل ۴۰۰، ۷۰۰ یا ۱۰۰۰ می‌بینید که کنار دهانه نوشته شده‌اند. این عدد فاصله‌ی کانونی است. در این مقاله می‌فهمید چه کاری انجام می‌دهد و چرا «بیشتر» همیشه به معنای «بهتر» نیست.</p>
 
@@ -102,7 +148,7 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 </ul>
 
 <h3>مقایسه (چشمی ۲۵ میلی‌متری، میدان ظاهری فرضی ۵۰ درجه)</h3>
-<div class="tw"><table>
+<div class="tw table-card"><table>
 <tr><th>فاصله‌ی کانونی</th><th>بزرگ‌نمایی</th><th>میدان دید حقیقی (تقریبی)</th><th>مناسب برای</th></tr>
 <tr><td>۴۰۰ میلی‌متر</td><td>۱۶ برابر</td><td>حدود ۳٫۱ درجه</td><td>خوشه‌ها و مناطق وسیع آسمان</td></tr>
 <tr><td>۷۰۰ میلی‌متر</td><td>۲۸ برابر</td><td>حدود ۱٫۸ درجه</td><td>رصد عمومی، قاب کامل ماه</td></tr>
@@ -111,14 +157,12 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 </table></div>
 <p class="mut">برای مقایسه: قطر ظاهری ماه حدود نیم درجه است، پس با همه‌ی این حالت‌ها کامل جا می‌شود.</p>
 
-<h3>مزایا، محدودیت‌ها و ارتباط با سایر مشخصات</h3>
-<p>فاصله‌ی کانونی کوتاه برای رصد اجرام وسیع مثل سحابی‌های گسترده و خوشه‌های باز مناسب‌تر است، و فاصله‌ی کانونی بلند برای ماه، سیارات و بعضی اجرام فشرده. محدودیت‌ها:</p>
-<ul>
+<h3>مزایا و محدودیت‌ها</h3><div class="pros-cons"><div class="mini-card advantage-card"><h4>مزیت‌ها و کاربردها</h4><p>فاصله‌ی کانونی کوتاه برای رصد اجرام وسیع مثل سحابی‌های گسترده و خوشه‌های باز مناسب‌تر است، و فاصله‌ی کانونی بلند برای ماه، سیارات و بعضی اجرام فشرده. محدودیت‌ها:</p></div><div class="mini-card limitation-card"><h4>محدودیت‌ها</h4><ul>
 <li>فاصله‌ی کانونی بلند، یافتن جرم را سخت‌تر می‌کند چون میدان دید باریک است.</li>
 <li>با فاصله‌ی کانونی بلند، لرزش پایه هم بزرگ‌تر دیده می‌شود.</li>
 <li>فاصله‌ی کانونی بلند جای دهانه‌ی کوچک را نمی‌گیرد. برای جزئیات سیارات، دهانه تعیین‌کننده است.</li>
 <li>از تقسیم فاصله‌ی کانونی بر دهانه، نسبت کانونی (f/) به دست می‌آید که در مقاله‌ی مستقل می‌آید.</li>
-</ul>
+</ul></div></div>
 
 <h3>اشتباهات رایج خریداران</h3>
 <ul>
@@ -137,28 +181,23 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <p>فاصله‌ی کانونی اندازه‌ی تصویر و میدان دید را تعیین می‌کند، نه کیفیت را. همیشه آن را کنار دهانه و چشمی ببینید.</p>
 
 <img src="Focallength_guide.webp" alt="راهنمای فاصله کانونی تلسکوپ" loading="lazy">
-<a class="btn" href="https://kharideali.ir/" rel="sponsored noopener">خرید تلسکوپ از فروشگاه</a>
+
 </article>
 
-<article id="faq">
+<article id="faq" class="content-card faq-card">
 <h2>پرسش‌های متداول</h2>
-<h3>فاصله‌ی کانونی ۷۰۰ میلی‌متر خوب است؟</h3>
-<p>برای مبتدی، با چشمی‌های رایج، بزرگ‌نمایی‌های متنوعی می‌دهد و به‌خصوص برای ماه و سیارات مناسب است.</p>
-<h3>فاصله‌ی کانونی را می‌شود تغییر داد؟</h3>
-<p>خود تلسکوپ ثابت است. با تعویض چشمی بزرگ‌نمایی تغییر می‌کند. ابزارهایی مثل بارلو هم فاصله‌ی مؤثر را بیشتر می‌کنند.</p>
-<h3>فرق فاصله‌ی کانونی با دهانه چیست؟</h3>
-<p>دهانه نور و جزئیات را تعیین می‌کند. فاصله‌ی کانونی اندازه‌ی تصویر و میدان دید را.</p>
+<details class="faq-item"><summary>فاصله‌ی کانونی ۷۰۰ میلی‌متر خوب است؟</summary><p>برای مبتدی، با چشمی‌های رایج، بزرگ‌نمایی‌های متنوعی می‌دهد و به‌خصوص برای ماه و سیارات مناسب است.</p></details>
+<details class="faq-item"><summary>فاصله‌ی کانونی را می‌شود تغییر داد؟</summary><p>خود تلسکوپ ثابت است. با تعویض چشمی بزرگ‌نمایی تغییر می‌کند. ابزارهایی مثل بارلو هم فاصله‌ی مؤثر را بیشتر می‌کنند.</p></details>
+<details class="faq-item"><summary>فرق فاصله‌ی کانونی با دهانه چیست؟</summary><p>دهانه نور و جزئیات را تعیین می‌کند. فاصله‌ی کانونی اندازه‌ی تصویر و میدان دید را.</p></details>
 </article>
 
-<section>
-<h3>منابع</h3>
-<ul class="src">
+<section class="sources-card"><h2>منابع و مطالعه‌ی بیشتر</h2><ul class="src">
 <li><a href="https://skyatnightmagazine.com/advice/telescope-focal-length">Sky at Night Magazine</a></li>
 <li><a href="https://www.optics-trade.eu/blog/aperture/">Optics-Trade</a></li>
 <li><a href="https://skiesandscopes.com/telescope-focal-length">Skies &amp; Scopes</a></li>
-</ul>
-</section>
+</ul></section>
 
+<p class="cta"><a class="btn" href="https://kharideali.ir/" target="_blank" rel="noopener">مشاهده‌ی تلسکوپ‌ها در فروشگاه</a></p>
 <section class="study-footer" aria-label="ادامه مسیر یادگیری">
 <h2>ادامه مسیر یادگیری</h2>
 <div class="study-links">
