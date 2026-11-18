@@ -30,10 +30,26 @@ th{background:var(--hi)}
 @media (prefers-color-scheme:dark){.btn{color:#0e1424}}
 ul,ol{padding-right:1.4rem;margin:.4rem 0}
 .src{font-size:.85rem;direction:ltr;text-align:left;word-break:break-all}
+
+.club-nav{margin:0 0 18px;padding:14px 16px;background:var(--hi);border:1px solid var(--line);border-radius:10px}
+.back-club{display:inline-block;padding:7px 15px;border-radius:8px;background:var(--acc);color:#fff!important;text-decoration:none;font-weight:700;font-size:.92rem}
+.breadcrumbs{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:10px;font-size:.88rem;color:var(--mut)}
+.breadcrumbs a{color:var(--acc);text-decoration:none}
+.breadcrumbs a:hover{text-decoration:underline}
 </style>
 </head>
 <body>
 <div class="w">
+<div class="club-nav" aria-label="مسیر راهنما">
+  <a class="back-club" href="https://kharideali.github.io/danesh-club/">← بازگشت به باشگاه دانش</a>
+  <div class="breadcrumbs">
+    <a href="https://kharideali.github.io/danesh-club/">خانه</a>
+    <span aria-hidden="true">/</span>
+    <a href="https://kharideali.github.io/danesh-club/categories/tools/">ابزارهای علمی</a>
+    <span aria-hidden="true">/</span>
+    <a href="https://kharideali.github.io/danesh-club/guides/telescope/">دنیای تلسکوپ</a>
+  </div>
+</div>
 <header>
 <h1>چشمی تلسکوپ</h1>
 <p class="mut"><a href="index.html">← قطر دهانه</a> &nbsp;|&nbsp; <a href="focal-length.html">فاصله کانونی</a> &nbsp;|&nbsp; <a href="magnification.html">بزرگ‌نمایی</a></p>
