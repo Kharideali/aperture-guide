@@ -52,56 +52,39 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 .study-links .club-link{width:min(100%,300px);background:rgba(254,243,199,.88);color:#92400e;border-color:rgba(252,211,77,.85)}
 @media(max-width:520px){.study-footer{padding:16px}.study-row.article-row{gap:8px}.study-row.article-row a{flex:1;min-width:0;padding:9px 8px;font-size:.88rem}}
 
-/* قالب یکپارچه‌ی آموزشی تلسکوپ؛ متن و محتوای علمی مقاله حفظ شده است */
-.w{max-width:1000px;padding:22px 18px 64px}
-.telescope-hero{position:relative;overflow:hidden;margin:18px 0 30px;padding:clamp(30px,6vw,64px);border-radius:28px;background:linear-gradient(125deg,#123d78 0%,#1e56b8 48%,#16a6a1 100%);color:#fff;box-shadow:0 18px 42px rgba(30,86,184,.2)}
-.telescope-hero:before,.telescope-hero:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.10);pointer-events:none}
-.telescope-hero:before{width:260px;height:260px;top:-130px;left:-50px}
-.telescope-hero:after{width:190px;height:190px;bottom:-110px;right:8%}
-.hero-inner{position:relative;z-index:1;max-width:760px;margin:auto}
-.hero-kicker{display:inline-block;padding:5px 14px;border:1px solid rgba(255,255,255,.35);border-radius:999px;background:rgba(255,255,255,.13);font-size:.82rem;font-weight:800}
-.telescope-hero h1{margin:15px 0 10px;font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.5}
-.telescope-hero p{max-width:680px;color:#e4f2ff;font-size:1.05rem;line-height:2}
-.hero-button{display:inline-flex;margin-top:14px;padding:10px 20px;border-radius:999px;background:#fff;color:#174b91!important;text-decoration:none;font-weight:800;box-shadow:0 7px 18px rgba(0,0,0,.12)}
-.content-card{margin:26px auto;padding:clamp(20px,3vw,34px);border:1px solid var(--line);border-radius:22px;background:var(--card);box-shadow:0 10px 28px rgba(30,60,110,.07)}
-.content-card h2{margin-top:0;padding-bottom:10px;border-bottom:1px solid var(--line);font-size:1.45rem}
-.content-card h3{margin-top:1.8rem;color:var(--acc);font-size:1.12rem}
-.content-card p,.content-card li{line-height:2.05}
-.simple-card{border-top:5px solid #27a69b}
-.detailed-card{border-top:5px solid #3978d0}
-.table-card{margin:18px 0;padding:12px;overflow-x:auto;border:1px solid #c9d9f4;border-radius:18px;background:linear-gradient(145deg,#f5f9ff,#fff);box-shadow:0 8px 22px rgba(30,86,184,.08)}
-.table-card table{min-width:560px;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:12px}
-.table-card th{background:#dceaff;color:#174b91;font-weight:800}
-.table-card td,.table-card th{padding:10px 12px;border-color:#d9e4f3}
-.table-card tr:nth-child(even) td{background:#f6f9ff}
-.pros-cons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:14px 0}
-.simple-example{margin:18px 0;padding:18px 22px;border:1px solid #bfdbfe;border-radius:18px;background:linear-gradient(135deg,#eff6ff,#f8fbff);color:#1e3a8a;box-shadow:0 8px 20px rgba(30,86,184,.07)}
-.simple-example>b{display:block;margin-bottom:6px;color:#1d4ed8;font-size:1.05rem}
-.simple-example p{margin:0}
-@media(prefers-color-scheme:dark){.simple-example{background:#172554;border-color:#334e83;color:#dbeafe}.simple-example>b{color:#bfdbfe}}
-.mini-card{padding:18px;border-radius:18px;border:1px solid;min-width:0}
-.mini-card h4{margin:0 0 8px;font-size:1.03rem}
-.mini-card p{margin:.3rem 0}
-.mini-card ul{margin:.3rem 0}
-.advantage-card{background:linear-gradient(145deg,#ecfdf5,#f5fffb);border-color:#a7e8ca;color:#145b43}
-.limitation-card{background:linear-gradient(145deg,#fff1f2,#fff8f8);border-color:#fecdd3;color:#8f2944}
-.faq-card details{margin:12px 0;padding:14px 18px;border:1px solid var(--line);border-radius:14px;background:var(--hi)}
-.faq-card summary{cursor:pointer;font-weight:800;color:var(--acc)}
-.faq-card details p{margin:10px 0 0}
-.sources-card{margin:28px auto;padding:22px 26px;border:1px solid #c9d9f4;border-radius:20px;background:linear-gradient(145deg,#f3f8ff,#fff);box-shadow:0 8px 22px rgba(30,86,184,.06)}
-.sources-card h2{margin:0 0 12px;font-size:1.25rem}
-.sources-card .src{margin:0}
-.cta{text-align:center;margin:34px 0 8px}
-.cta .btn{margin:0;padding:12px 28px;border-radius:999px;background:linear-gradient(120deg,#1e56b8,#168f9a);box-shadow:0 8px 20px rgba(30,86,184,.2)}
-@media(prefers-color-scheme:dark){
- .table-card,.sources-card{background:#17233b;border-color:#344b70}
- .table-card th{background:#233c63;color:#dbeafe}
- .table-card td,.table-card th{border-color:#344b70}
- .table-card tr:nth-child(even) td{background:#1b2a45}
- .advantage-card{background:#15372f;border-color:#28664f;color:#c8f7df}
- .limitation-card{background:#3a202b;border-color:#754052;color:#ffd7e0}
-}
-@media(max-width:650px){.w{padding:12px 12px 44px}.telescope-hero{border-radius:21px;margin-top:10px}.pros-cons{grid-template-columns:1fr}.content-card{border-radius:18px;padding:19px 16px}.sources-card{padding:18px 16px}.table-card{padding:8px}}
+/* قالب آموزشی هماهنگ با مقالات میکروسکوپ؛ پالت آبی تلسکوپ حفظ شده است */
+.hero{margin:10px 0 26px;padding:30px 28px;border:1px solid #bfdbfe;border-radius:24px;background:linear-gradient(135deg,#eff6ff 0%,#dbeafe 55%,#e0f2fe 100%);box-shadow:0 12px 28px rgba(30,86,184,.10)}
+.hero .tag,.pill{display:inline-block;padding:5px 12px;border-radius:999px;background:#dbeafe;color:#1e40af;font-size:.82rem;font-weight:800}
+.hero h1{margin:12px 0 8px;color:#163b78}
+.hero p{max-width:760px;margin:0;color:#334e78}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.hero-actions a{display:inline-flex;align-items:center;justify-content:center;padding:8px 16px;border-radius:999px;text-decoration:none;font-weight:800}
+.hero-actions .primary{background:#1e56b8;color:#fff}
+.hero-actions .secondary{background:#fff;color:#1e56b8;border:1px solid #bfdbfe}
+.content-section{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 24px 24px;margin:22px 0;box-shadow:0 8px 24px rgba(30,64,100,.045)}
+.content-section> .section-head{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.section-head .pill{background:#eaf0fb;color:#1e56b8}
+.simple-example,.info-box,.warning-box,.buying-box,.formula-box{padding:14px 18px;margin:16px 0;border-radius:16px;border:1px solid}
+.simple-example{background:#eff6ff;border-color:#bfdbfe;color:#1e3a8a}
+.info-box{background:#f0fdfa;border-color:#99f6e4;color:#115e59}
+.warning-box{background:#fff7ed;border-color:#fed7aa;color:#9a3412}
+.buying-box{background:#f5f3ff;border-color:#ddd6fe;color:#5b21b6}
+.formula-box{background:#172554;color:#eff6ff;border-color:#1e40af;text-align:center;font-weight:800}
+.grid-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:14px 0}
+.grid-cards .mini-card{background:var(--hi);border:1px solid var(--line);border-radius:15px;padding:13px 16px}
+.grid-cards .mini-card b{display:block;color:var(--acc);margin-bottom:4px}
+.content-section h2{margin-top:.5rem}
+.content-section h3{margin-top:1.5rem}
+.faq-list details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:10px 0}
+.faq-list summary{cursor:pointer;font-weight:800;color:var(--acc)}
+.faq-list details p{margin:.5rem 0 0}
+.sources{margin:22px 0;padding:16px 20px;border:1px solid var(--line);border-radius:18px;background:var(--hi)}
+.sources h2{margin:0 0 8px;font-size:1.1rem}
+.sources ul{margin:0}
+.cta{text-align:center;margin:28px 0 8px}
+@media(max-width:600px){.hero{padding:22px 18px;border-radius:18px}.content-section{padding:14px 16px}.hero-actions a{flex:1}.grid-cards{grid-template-columns:1fr}}
+@media(prefers-color-scheme:dark){.hero{background:linear-gradient(135deg,#172554,#1e3a8a,#164e63);border-color:#334e83}.hero h1,.hero p{color:#eff6ff}.hero .tag,.pill{background:#1e3a8a;color:#dbeafe}.hero-actions .secondary{background:#172554;color:#bfdbfe;border-color:#334e83}.simple-example{background:#172554;border-color:#334e83;color:#dbeafe}.info-box{background:#123b3b;border-color:#155e5b;color:#ccfbf1}.warning-box{background:#431407;border-color:#9a3412;color:#ffedd5}.buying-box{background:#312e81;border-color:#5b21b6;color:#ede9fe}.grid-cards .mini-card{background:#1b2644}.sources{background:#1b2644}}
+
 
 </style>
 </head>
@@ -117,9 +100,18 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
     <a href="https://kharideali.github.io/danesh-club/guides/telescope/">دنیای تلسکوپ</a>
   </div>
 </div>
-<header class="telescope-hero"><div class="hero-inner"><span class="hero-kicker">راهنمای علمی تلسکوپ</span><h1>بزرگ‌نمایی تلسکوپ چگونه کار می‌کند؟</h1><p>فرمول بزرگ‌نمایی را با مثال یاد بگیرید و تفاوت بزرگ‌نمایی مفید با عددهای تبلیغاتی را بشناسید.</p><a class="hero-button" href="#guide">رفتن به راهنمای کامل</a></div></header>
+<header class="hero">
+<span class="tag">بخش سوم از مجموعه راهنمای تلسکوپ</span>
+<h1>بزرگ‌نمایی تلسکوپ چگونه کار می‌کند؟</h1>
+<p>فرمول بزرگ‌نمایی را با مثال یاد بگیرید و تفاوت بزرگ‌نمایی مفید با عددهای تبلیغاتی را بشناسید.</p>
+<div class="hero-actions">
+<a class="primary" href="#simple">شروع با توضیح ساده</a>
+<a class="secondary" href="#guide">رفتن به راهنمای کامل</a>
+</div>
+</header>
 
-<article id="simple" class="content-card simple-card">
+<section class="content-section" id="simple">
+<div class="section-head"><span class="pill">به زبان خیلی ساده</span></div>
 <h2>بزرگ‌نمایی به زبان خیلی ساده</h2>
 <p>بزرگ‌نمایی یعنی تصویر چند برابر بزرگ‌تر دیده شود. اگر بزرگ‌نمایی ۵۰ برابر باشد، جرم آسمانی را طوری می‌بینی که انگار ۵۰ برابر نزدیک‌تر است.</p>
 <p>یک تشبیه: وقتی روی گوشی زیاد زوم می‌کنی، تصویر بزرگ می‌شود ولی جزئیات تازه‌ای پیدا نمی‌کند. بزرگ‌نمایی تلسکوپ هم همین‌طور است: اندازه را بزرگ می‌کند، اما خودش شفافیت را بیشتر نمی‌کند. (این فقط یک تشبیه است و دو سازوکار یکی نیستند.)</p>
@@ -133,9 +125,10 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <p>پس با عوض‌کردن چشمی، بزرگ‌نمایی را عوض می‌کنی.</p>
 <p><b>هنگام خرید:</b> به عددهای بزرگ روی جعبه، مثل «۳۵۰ برابر»، اعتماد نکن. مهم این است که تلسکوپ با دهانه‌ی خودش بتواند آن بزرگ‌نمایی را تصویر خوبی نشان دهد.</p>
 
-</article>
+</section>
 
-<article id="guide" class="content-card detailed-card">
+<section class="content-section" id="guide">
+<div class="section-head"><span class="pill">مقاله مفصل آموزشی</span></div>
 <h2>بزرگ‌نمایی تلسکوپ چیست و چطور محاسبه می‌شود؟</h2>
 <p>روی جعبه‌ی خیلی از تلسکوپ‌ها عددهایی مثل «۳۵۰ برابر» یا «۵۰۰ برابر» نوشته شده است. آیا این عددها نشانه‌ی قدرت تلسکوپ‌اند؟ در این مقاله می‌فهمید بزرگ‌نمایی چطور محاسبه می‌شود و چرا فقط به آن نباید اعتماد کرد.</p>
 
@@ -181,16 +174,17 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <div class="simple-example"><b>جمع‌بندی</b><p>بزرگ‌نمایی فقط اندازه‌ی تصویر را عوض می‌کند. کیفیت تصویر را دهانه، اپتیک و شرایط آسمان تعیین می‌کنند.</p></div>
 <img src="Magnification.webp" alt="بزرگ‌نمایی تلسکوپ" style="max-width:100%;height:auto;border-radius:16px;display:block;margin:18px auto">
 
-</article>
+</section>
 
-<article id="faq" class="content-card faq-card">
+<section class="content-section faq-list" id="faq">
+<div class="section-head"><span class="pill">پرسش‌های متداول</span></div>
 <h2>پرسش‌های متداول</h2>
 <details class="faq-item"><summary>بزرگ‌نمایی ۱۰۰ برابر برای ماه خوب است؟</summary><p>برای دهانه‌ی ۷۰ میلی‌متر معمولاً در محدوده‌ی معقول است. ولی ماه با بزرگ‌نمایی کمتر هم جزئیات زیادی نشان می‌دهد.</p></details>
 <details class="faq-item"><summary>لنز بارلو چه می‌کند؟</summary><p>بزرگ‌نمایی را چند برابر می‌کند. مثلاً بارلو ۲× با چشمی ۱۰ میلی‌متری روی تلسکوپ ۷۰۰ میلی‌متری، ۱۴۰ برابر می‌دهد. جزئیات تازه نمی‌سازد.</p></details>
 <details class="faq-item"><summary>چرا با بزرگ‌نمایی زیاد تصویر تار می‌شود؟</summary><p>چون دهانه و شرایط جو توان نشان‌دادن جزئیات بیشتر را ندارند.</p></details>
-</article>
+</section>
 
-<section class="sources-card"><h2>منابع و مطالعه‌ی بیشتر</h2><ul class="src">
+<section class="sources"><h2>منابع و مطالعه‌ی بیشتر</h2><ul class="src">
 <li><a href="https://skyatnightmagazine.com/advice/telescope-focal-length">Sky at Night Magazine</a></li>
 <li><a href="https://skyandtelescope.com/astronomy-equipment/how-to-choose-a-telescope/">Sky &amp; Telescope</a></li>
 <li><a href="https://agenaastro.com/articles/guides/choosing-the-best-telescope-for-beginners.html">Agena Astro</a></li>
