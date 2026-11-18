@@ -75,6 +75,10 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 .table-card td,.table-card th{padding:10px 12px;border-color:#d9e4f3}
 .table-card tr:nth-child(even) td{background:#f6f9ff}
 .pros-cons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:14px 0}
+.simple-example{margin:18px 0;padding:18px 22px;border:1px solid #bfdbfe;border-radius:18px;background:linear-gradient(135deg,#eff6ff,#f8fbff);color:#1e3a8a;box-shadow:0 8px 20px rgba(30,86,184,.07)}
+.simple-example>b{display:block;margin-bottom:6px;color:#1d4ed8;font-size:1.05rem}
+.simple-example p{margin:0}
+@media(prefers-color-scheme:dark){.simple-example{background:#172554;border-color:#334e83;color:#dbeafe}.simple-example>b{color:#bfdbfe}}
 .mini-card{padding:18px;border-radius:18px;border:1px solid;min-width:0}
 .mini-card h4{margin:0 0 8px;font-size:1.03rem}
 .mini-card p{margin:.3rem 0}
@@ -174,9 +178,8 @@ ul,ol{padding-right:1.4rem;margin:.4rem 0}
 <li>چشمی‌هایی بگیرید که بزرگ‌نمایی‌های پایین تا متوسط بدهند.</li>
 </ol>
 
-<h3>جمع‌بندی</h3>
-<p>بزرگ‌نمایی فقط اندازه‌ی تصویر را عوض می‌کند. کیفیت تصویر را دهانه، اپتیک و شرایط آسمان تعیین می‌کنند.</p>
-<img src="Magnification.webp" alt="بزرگ‌نمایی تلسکوپ" loading="lazy" style="display:block;max-width:100%;height:auto;border-radius:8px;margin-top:18px">
+<div class="simple-example"><b>جمع‌بندی</b><p>بزرگ‌نمایی فقط اندازه‌ی تصویر را عوض می‌کند. کیفیت تصویر را دهانه، اپتیک و شرایط آسمان تعیین می‌کنند.</p></div>
+<img src="Magnification.webp" alt="بزرگ‌نمایی تلسکوپ" style="max-width:100%;height:auto;border-radius:16px;display:block;margin:18px auto">
 
 </article>
 
